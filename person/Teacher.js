@@ -3,7 +3,7 @@ const Employ = require("./Employ");
 const _subject = Symbol("subject");
 
 class Teacher extends Employ {
-  constructor(id, name, employeeId, salary, subject) {
+  constructor({ id, name, employeeId, salary, subject }) {
     super(id, name, employeeId, salary);
     this[_subject] = subject;
   }

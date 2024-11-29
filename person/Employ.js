@@ -7,7 +7,7 @@ class Employ extends UniPerson {
   constructor(id, name, employeeId, salary) {
     super(id, name);
     this[_employeeId] = employeeId;
-    this[_salary] = null;
+    this[_salary] = salary;
   }
 
   get employeeId() {
